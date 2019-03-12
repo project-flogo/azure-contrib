@@ -3,10 +3,47 @@
     "type": "flogo:activity",
     "version": "0.0.2",
     "title": "Blob",
-    "description": "Store Blob",
-    "homepage": "https://github.com/prject-flogo/contrib/tree/master/activity/log",
-    "settings":{
+    "description": "Store/List Blob",
+    "homepage": "",
+    "settings":[
+      {
+        "name": "azure_storage_account",
+        "type": "string",
+        "required": true
         
-    }
+      },
+      {
+        "name": "azure_storage_access_key",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "method",
+        "type": "string",
+        "required": true,
+        "allowed": [ "upload", "list"]
+      },
+      {
+        "name": "container_name",
+        "type": "string",
+        "required": true
+      }
+    ],
+    "input":[
+      {
+        "name":"file",
+        "type":"string"
+      },
+      {
+        "name":"data",
+        "type":"string"
+      }
+    ],
+    "output":[
+      {
+        "name":"result",
+        "type":"any"
+      }
+    ]
   }
   

@@ -7,8 +7,8 @@ import (
 type Settings struct {
 	AZURE_STORAGE_ACCOUNT    string `md:"azure_storage_account,required"`
 	AZURE_STORAGE_ACCESS_KEY string `md:"azure_storage_access_key,required"`
-	Method                   string `md:"method"`
-	ContainerName            string `md:"container_name"`
+	Method                   string `md:"method,required"`
+	ContainerName            string `md:"container_name,required"`
 }
 type Input struct {
 	File string `md:"file"`
