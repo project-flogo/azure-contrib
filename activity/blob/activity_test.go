@@ -21,7 +21,7 @@ func TestRegister(t *testing.T) {
 
 func TestSettings(t *testing.T) {
 	settings := &Settings{Method: "upload",
-		AZURE_STORAGE_ACCESS_KEY: "4KmJJLSbF2PUrWj08M4iWNxS68zDkkhUdBGBtUETYgB9KjLXn19HLdsGjonW6CBtlBJtS7VdPAjtwyL1rFEorA==", AZURE_STORAGE_ACCOUNT: "blobtesttibco",
+		AZURE_STORAGE_ACCESS_KEY: "...", AZURE_STORAGE_ACCOUNT: "blobtesttibco",
 		ContainerName: "sample"}
 
 	iCtx := test.NewActivityInitContext(settings, nil)
@@ -31,7 +31,7 @@ func TestSettings(t *testing.T) {
 }
 func TestSimpleUpdate(t *testing.T) {
 	settings := &Settings{Method: "upload",
-		AZURE_STORAGE_ACCESS_KEY: "VU4lKfOQMV8YlzKj3GYJzqvntZEfBdAlb1qGaHRvCfW8Jmvc5k+27EWJa0vwapa3KjhivfN3BhulBm4auHlTrg==", AZURE_STORAGE_ACCOUNT: "blobtesttibco",
+		AZURE_STORAGE_ACCESS_KEY: "..", AZURE_STORAGE_ACCOUNT: "blobtesttibco",
 		ContainerName: "sample"}
 	input := &Input{File: "sample.txt", Data: "Sample Blob"}
 
