@@ -4,7 +4,7 @@
     "version": "0.0.2",
     "title": "Blob",
     "description": "Store/List Blob",
-    "homepage": "",
+    "homepage": "https://github.com/project-flogo/azure-contrib/activity/blob",
     "settings":[
       {
         "name": "azure_storage_account",
